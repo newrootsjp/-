@@ -1,62 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>目次ページ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    nav {
-      width: 220px;
-      background: #f0f0f0;
-      padding: 1em;
-      height: 100vh;
-      box-sizing: border-box;
-      position: fixed;
-      overflow-y: auto;
-      transition: left 0.3s;
-      left: 0;
-    }
-    main {
-      margin-left: 220px;
-      padding: 1em;
-    }
-    nav ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    nav li {
-      margin: 0.5em 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      display: block;
-      padding: 0.5em 0;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* モバイル対応のための追加 */
-    @media (max-width: 600px) {
-      nav {
-        position: relative;
-        width: 100%;
-        height: auto;
-        left: 0;
-      }
-      main {
-        margin-left: 0;
-      }
-    }
-  </style>
+<meta charset="UTF-8" />
+<title>Mu-Ci</title>
+<style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .sidebar {
+    width: 250px; /* 左側の幅 */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .content {
+    flex-grow: 1; /* 右側のコンテンツエリアが残りの幅を占める */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+</style>
 </head>
 <body>
-  <nav>
+  <div class="container">
+    <nav class="sidebar">
+      <h2>目次</h2>
+      <ol>
+        <li>Kyle (I Found You)</li>
+        <li>Bleu (better with time)</li>
+        <li>glow</li>
+        <li>adore u</li>
+        <li>places to be</li>
+        <li>Victory Lap</li>
+        <li>Victory Lap Four</li>
+        <li>Jungle</li>
+        <li>Rumble</li>
+        <li>peace u need</li>
+        <li>leavemealone</li>
+        <li>Turn On the Lights again..</li>
+        <li>Danielle (smile on my face)</li>
+        <li>Angie (I’ve Been Lost)</li>
+        <li>Clara (the night is dark)</li>
+        <li>Marea (we’ve lost dancing)</li>
+        <li>Billie (loving arms)</li>
+        <li>Marco (and everyone)</li>
+        <li>Delilah (pull me out of this)</li>
+      </ol>
+    </nav>
     <h2>目次</h2>
     <ul>
       <li><a href="https://newrootsjp.github.io/-/1.Kyle (I Found You).html">1.Kyle (I Found You)</a></li>
