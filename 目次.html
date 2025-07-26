@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>目次ページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    nav {
+      width: 220px;
+      background: #f0f0f0;
+      padding: 1em;
+      height: 100vh;
+      box-sizing: border-box;
+      position: fixed;
+      overflow-y: auto;
+      transition: left 0.3s;
+      left: 0;
+    }
+    main {
+      margin-left: 220px;
+      padding: 1em;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    nav li {
+      margin: 0.5em 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 0.5em 0;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* モバイル対応のための追加 */
+    @media (max-width: 600px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+      }
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h2>目次</h2>
+    <ul>
+      <li><a href="page1.html">ページ1</a></li>
+      <li><a href="page2.html">ページ2</a></li>
+      <li><a href="page3.html">ページ3</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>ようこそ</h1>
+    <p>右側（または下部）にコンテンツを表示します。</p>
+  </main>
+</body>
+</html>
