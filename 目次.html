@@ -2,33 +2,43 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>Mu-Ci</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>目次とコンテンツ表示</title>
 <style>
   body {
+    font-family: "Yu Gothic", "ヒラギノ角ゴ Pro W3", Meiryo, sans-serif;
     margin: 0;
-    font-family: sans-serif;
-  }
-  .container {
+    padding: 20px;
     display: flex;
-    min-height: 100vh;
-  }
-  .sidebar {
-    width: 250px; /* 左側の幅 */
-    background-color: #f0f0f0;
-    padding: 20px;
+    height: 100vh;
     box-sizing: border-box;
   }
-  .content {
-    flex-grow: 1; /* 右側のコンテンツエリアが残りの幅を占める */
-    padding: 20px;
-    box-sizing: border-box;
+  #toc {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+    overflow-y: auto;
+  }
+  #content {
+    width: 70%;
+    padding-left: 20px;
+    overflow-y: auto;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  ul {
+    padding-left: 1em;
+  }
+  li {
+    margin-bottom: 0.5em;
   }
 </style>
 </head>
 <body>
-  <div class="container">
-    <nav class="sidebar">
-    <h2>目次</h2>
+  <nav id="toc">
+    <h1>目次</h1>
     <ul>
       <li><a href="https://newrootsjp.github.io/-/1.Kyle (I Found You).html">1.Kyle (I Found You)</a></li>
       <li><a href="https://newrootsjp.github.io/-/2.Bleu (better with time).html">2.Bleu (better with time)</a></li>
@@ -49,9 +59,11 @@
       <li><a href="https://newrootsjp.github.io/-/17.Billie (loving arms).html">17.Billie (loving arms)</a></li>
       <li><a href="https://newrootsjp.github.io/-/18.Marco (and everyone).html">18.Marco (and everyone)</a></li>
       <li><a href="https://newrootsjp.github.io/-/19.Delilah (pull me out of this).html">19.Delilah (pull me out of this)</a></li>
+      
+      <li>Delilah (pull me out of this)</li>
     </ul>
   </nav>
-  <main>
+  <main id="content">
     <h1>ようこそ</h1>
     <p>右側（または下部）にコンテンツを表示します。</p>
   </main>
