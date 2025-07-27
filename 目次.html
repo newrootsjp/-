@@ -1,58 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>目次連動コンテンツ表示</title>
-<style>
-  body {
-    font-family: "Yu Gothic", "ヒラギノ角ゴ Pro W3", Meiryo, sans-serif;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    height: 100vh;
-    box-sizing: border-box;
-    background: #f9f9f9;
-  }
-  #toc {
-    width: 30%;
-    border-right: 1px solid #ccc;
-    padding-right: 20px;
-    overflow-y: auto;
-  }
-  #toc h1 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
-  #toc ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  #toc li {
-    margin-bottom: 0.5em;
-    cursor: pointer;
-    color: #0066cc;
-  }
-  #toc li:hover {
-    text-decoration: underline;
-  }
-  #toc li.active {
-    font-weight: bold;
-    color: #003366;
-  }
-  #content {
-    width: 70%;
-    padding-left: 20px;
-    overflow-y: auto;
-  }
-  #content h2 {
-    font-size: 1.4em;
-    margin-top: 0;
-  }
-  #content p {
-    line-height: 1.6;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>目次</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #fff;
+      color: #000;
+    }
+    h1 {
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <nav id="toc" aria-label="目次">
