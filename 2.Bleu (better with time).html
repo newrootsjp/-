@@ -3,62 +3,73 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Bleu (better with time) – 詳細解説</title>
+<title>Bleu (better with time) – 楽曲詳細解説</title>
 <style>
-  /* 基本スタイル */
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fffefa;
+    color: #222;
     line-height: 1.6;
     margin: 0;
-    padding: 1em;
-    background: #fefefe;
-    color: #222;
+    padding: 1em 1.2em;
   }
-  h1, h2, h3 {
+  h1, h2 {
+    color: #0077cc;
     font-weight: bold;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #0066cc;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
   }
-  p {
-    margin: 0.5em 0;
+  p, pre, ul, li {
+    margin: 0.6em 0;
   }
   ul {
-    padding-left: 1.2em;
+    padding-left: 1.4em;
   }
-  /* 目次スタイル */
-  #toc {
-    background-color: #e6f0ff;
-    border: 1px solid #99c2ff;
-    border-radius: 8px;
+  ul li {
+    margin-bottom: 0.4em;
+  }
+  pre {
+    background: #f7f7f7;
     padding: 1em;
-    margin-bottom: 1.5em;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: "Courier New", Courier, monospace;
+  }
+  #toc {
+    background: #dceeff;
+    border: 1px solid #99bbff;
+    border-radius: 8px;
+    padding: 1em 1em 1em 1.2em;
+    margin-bottom: 1.8em;
   }
   #toc h2 {
     margin-top: 0;
   }
   #toc ul {
     list-style: none;
+    margin: 0;
     padding-left: 0;
   }
   #toc ul li {
     margin: 0.3em 0;
   }
   #toc a {
-    color: #004c99;
+    color: #0055aa;
     text-decoration: none;
+    font-weight: 600;
   }
-  #toc a:hover {
+  #toc a:hover,
+  #toc a:focus {
     text-decoration: underline;
   }
-  /* スマホフレンドリーに文字サイズ調整 */
   @media (max-width: 480px) {
     body {
+      padding: 0.8em 1em;
       font-size: 1em;
-      padding: 0.8em;
     }
     h1 {
-      font-size: 1.4em;
+      font-size: 1.5em;
     }
     h2 {
       font-size: 1.2em;
@@ -68,38 +79,44 @@
 </head>
 <body>
 
-<h1>Bleu (better with time) – 詳細解説</h1>
+<h1>Bleu (better with time) – 楽曲詳細解説</h1>
 
 <nav id="toc" aria-label="目次">
   <h2>目次</h2>
   <ul>
-    <li><a href="#about">Bleu (better with time)とは</a></li>
-    <li><a href="#production">制作時のエピソード</a></li>
-    <li><a href="#lyrics-en">英語歌詞（可能な限り完全版）</a></li>
-    <li><a href="#lyrics-ja">日本語訳・意訳</a></li>
-    <li><a href="#analysis">解釈・詩的考察</a></li>
-    <li><a href="#references">参考リンク</a></li>
+    <li><a href="#episode">制作時のエピソード</a></li>
+    <li><a href="#lyrics-en">英語歌詞</a></li>
+    <li><a href="#lyrics-ja">歌詞の和訳・意訳</a></li>
   </ul>
 </nav>
 
-<section id="about">
-  <p><strong>Bleu (better with time)</strong>は、Fred again..が2022年10月28日にリリースしたシングルで、『Actual Life 3 (January 1 – September 9 2022)』に収録されています。このトラックは、現代の「痛みと回復」をテーマに、Samuel “Yung Bleu” Monteroの曲“You’re Mines Still”からのヴォーカル・サンプルとFred自身の歌唱を組み合わせた、エモーショナルなダンス・アンセムです。</p>
-</section>
-
-<section id="production">
+<section id="episode">
   <h2>制作時のエピソード</h2>
-  <p>Fred again..はこれまでの“Actual Life”シリーズ同様、日常で出会った断片的な音声素材をサンプリングし、自身の感情と融合させる手法を用いています。</p>
-  <ul>
-    <li>使用サンプルは、アメリカのラッパー／シンガーYung Bleuによる“You’re Mines Still”のヴォーカル「…you’re mines still」部分。</li>
-    <li>Fredは「最初にこのサンプルを聴いたのは朝6時頃で、感覚が麻痺しているような状態だった。それでも心に響いた。その瞬間、時間が経てば良くなるというフレーズが自分に必要な言葉だと感じた」と語っています。</li>
-    <li>制作プロセスの中心には、トラウマや苦しみとともに生きる過程があり、Fredは「痛みは最初は目の前で大きく鳴り響くが、時間とともに見えにくくなり、しかし依然として自分を支配し続ける。そのフェーズが最も怖い」とその心情を吐露しています。</li>
-  </ul>
+  <p><strong>Bleu (better with time)</strong>は、Fred again..が2022年10月28日にリリースしたシングルであり、彼の「Actual Life 3 (January 1 – September 9 2022)」アルバムに収録されています。Fred again..の代表的なエモーショナル・ダンスミュージックのひとつであり、現代社会における「痛みと回復」のテーマを深く掘り下げた作品です。</p>
+  
+  <p>制作プロセスは、Fred again..の「Actual Life」シリーズの手法を踏襲し、日常生活で出会った断片的な音声素材をサンプリングし、それらを自身の心情や体験と融合させる形で進められました。トラウマや心の痛みと向き合い、それを時間の経過とともに受け入れ、回復への希望を描く点は本曲の大きなテーマとなっています。</p>
+  
+  <p>このトラックは、Fred again..が抱える複雑な感情の真実味を反映しており、「痛みは最初は前面に大きく鳴り響くが、時間が経つと見えにくくなり、なおかつ自分を支配し続けている。このフェーズが最も怖い」という彼の言葉が象徴的です。</p>
+  
+  <p>Fred again..はサンプリング素材に自身の経験を重ねて「他者の声」を通じた自己表現を展開し、痛みと回復をリアルかつ感情的に紡ぎ出しました。デジタル世代の孤独感や断片的な繋がりを反映しつつ、多くのリスナーが共感できる普遍的なテーマの楽曲に仕上げられています。</p>
 </section>
 
 <section id="lyrics-en">
-  <h2>英語歌詞（可能な限り完全版）</h2>
-  <p><strong>Verse 1 (Fred again..)</strong></p>
-  <pre style="white-space: pre-wrap; background:#f8f8f8; padding:1em; border-radius:5px;">
+  <h2>英語歌詞</h2>
+<pre>
+Verse 1 (Fred again..)
+
+Don't hurt me  
+But I thought you were on my side  
+I need you to desert me  
+But you'll always shape my life  
+And I'm trying to make that fine  
+And I'm trying to call tonight  
+I know that you're sorry  
+But I don't need to find out why
+
+Drop & Chorus (BLEU) – 繰り返し
+
 I just know that it gets better with time  
 Just know that  
 …  
@@ -109,63 +126,64 @@ I just know that it get better with time
 
 Verse 2 (Fred again..)
 
-Outro & Chorus (BLEU) – 繰り返し
-  </pre>
-
-  <p><em>※歌詞全文のテキストがすべてではありませんが、詳細は下記参考リンクをご参照ください。</em></p>
+Oh, it haunts me  
+It's just when your screen went black  
+But I still feel you above me  
+And you'll always guide me back  
+I see you fading, fading  
+But you saved me  
+All night, all night  
+But you break me  
+Alright, alright  
+(I'm here)
+</pre>
 </section>
 
 <section id="lyrics-ja">
-  <h2>日本語訳・意訳</h2>
-  <p>
-    <strong>Intro &amp; Chorus</strong><br />
-    「時間が経てばきっと良くなる<br />
-    ただそれを信じて<br />
-    きっと時間が経てば良くなる<br />
-    信じて<br />
-    きっと…<br />
-    まだ盲目のまま<br />
-    彼に、君はまだ僕のものだって伝えて<br />
-    時間が経てばきっと良くなる<br />
-    まだ盲目のまま」
-  </p>
-  <p>
-    <strong>Verse 2</strong><br />
-    「それが僕を苛む<br />
-    画面が暗くなった瞬間だけど<br />
-    それでも君の気配を感じる<br />
-    そして君はいつも僕を導いてくれる<br />
-    消えていくのが見える<br />
-    でも君は僕を救った<br />
-    一晩中<br />
-    そして壊す<br />
-    でも大丈夫（ここに僕がいる）」
-  </p>
-  <p>
-    <strong>Outro &amp; Chorus</strong><br />
-    「きっと時間が経てば良くなる…<br />
-    きっと時間が経てば良くなる」
-  </p>
-</section>
+  <h2>歌詞の和訳・意訳</h2>
+  <p><strong>直訳</strong></p>
 
-<section id="analysis">
-  <h2>解釈・詩的考察</h2>
-  <p>
-    <strong>「時間が経てば良くなる」という繰り返しは、トラウマや裏切りの痛みからの回復を願う強い意志を象徴します。</strong><br />
-    Verse 1の「傷つけないでくれ…でも君には去ってほしい」という葛藤は、愛する人への依存と自立の狭間で揺れる感情を描写しています。Verse 2では、「画面が暗くなった瞬間」に感じる喪失感と、それでもなお残る「気配」が、<strong>デジタル時代の断片的な繋がり</strong>を通じた記憶と痛みを示唆しています。
-  </p>
-  <p>
-    Fred again..は、サンプリング素材と自身の歌唱を重ねることで、<strong>「他者の声」に自らの経験を投影し、普遍的な回復の物語を紡ぐ</strong>手法をとっています。このトラックは、痛みを抱えながらも希望を失わない人々の心情を代弁し、ダンス・ミュージックでありながら深い共感を呼ぶ作品となっています。
-  </p>
-</section>
+  <p>〈Verse 1〉<br>
+  「傷つけないでくれ<br>
+  君は味方だと思っていた<br>
+  君に去ってほしいのに<br>
+  でも君はいつも僕の人生を形作っている<br>
+  僕はそれをなんとかしたい<br>
+  今夜電話をかけようとしている<br>
+  君が謝っていることはわかっている<br>
+  でも理由は聞かなくていい」</p>
 
-<section id="references">
-  <h2>参考リンク</h2>
-  <ul>
-    <li><a href="https://thissongissick.com/post/fred-again-bleu-better-with-time/" target="_blank" rel="noopener noreferrer">This Song Is Sick - Fred again.. “Bleu (Better With Time)”</a></li>
-    <li><a href="https://www.letras.mus.br/fred-again/bleu-better-with-time/" target="_blank" rel="noopener noreferrer">LETRAS.MUS.BR - 歌詞全文と解説</a></li>
-  </ul>
+  <p>〈Chorus〉<br>
+  「時間が経てばきっと良くなる<br>
+  ただそれを信じて<br>
+  まだ盲目だけど<br>
+  君がまだ僕のものだって伝えてくれ<br>
+  時間が経てばきっと良くなる」</p>
+
+  <p>〈Verse 2〉<br>
+  「ああ、それが僕を苦しめる<br>
+  君の画面が真っ暗になった時だけど<br>
+  僕はまだ君の上に感じている<br>
+  君はずっと僕を導いてくれる<br>
+  消えていくのが見えるけど<br>
+  君は僕を救った<br>
+  一晩中<br>
+  でも君が僕を壊す<br>
+  でも大丈夫だよ<br>
+  （ここにいる）」</p>
+
+  <p><strong>意訳・詩的解釈</strong></p>
+
+  <p>この楽曲のリリックは、裏切りや痛みからの回復を願う切実な感情を描いています。特にVerse 1では、「味方」と信じていた人に傷つけられた複雑な思いと、心のどこかではまだ依存や繋がりを望んでいる葛藤が浮き彫りになります。</p>
+
+  <p>Chorusの「時間が経てばきっと良くなる」は、苦しみの中でも希望を持ち続ける強い意志を反復することで、普遍的な励ましとなっています。</p>
+
+  <p>Verse 2では、「画面が真っ暗になる」というデジタル時代の切断感を象徴的に描きつつ、それでも相手の存在を感じて踏みとどまり続ける様子が表現されています。その一方で、「君は僕を壊す」という厳しい現実も突きつけられる中で、「でも大丈夫」と繰り返すのは自己救済の言葉にも聞こえます。</p>
+
+  <p>Fred again..はサンプリング素材に自身の経験を重ねて「他者の声」を通じた自己表現を展開しており、デジタル世代の孤独感や断片的な繋がりを反映しつつ、多くのリスナーが共感できる普遍的なテーマの楽曲に仕上げられています。</p>
+
 </section>
 
 </body>
 </html>
+>
